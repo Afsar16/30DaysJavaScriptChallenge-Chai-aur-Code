@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover Event Listener</title>
+    <style>
+        .bordered {
+            border: 2px solid black;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv" class="bordered">Hover over me!</div>
+    <script>
+        // Select the div element by its ID
+        const div = document.getElementById('myDiv');
+
+        // Add a mouseover event listener to the div
+        div.addEventListener('mouseover', () => {
+            // Change the border color of the div
+            div.style.borderColor = 'red';
+        });
+
+        // Add a mouseout event listener to reset the border color when the mouse leaves the element
+        div.addEventListener('mouseout', () => {
+            // Reset the border color of the div
+            div.style.borderColor = 'black';
+        });
+    </script>
+</body>
+</html>
+

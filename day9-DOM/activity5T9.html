@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Event Listener</title>
+</head>
+<body>
+    <p id="myParagraph">Original text.</p>
+    <button id="changeTextButton">Change Text</button>
+    <script>
+        // Select the paragraph and button elements by their IDs
+        const paragraph = document.getElementById('myParagraph');
+        const button = document.getElementById('changeTextButton');
+
+        // Add a click event listener to the button
+        button.addEventListener('click', () => {
+            // Change the text content of the paragraph
+            paragraph.textContent = 'Text has been changed!';
+        });
+    </script>
+</body>
+</html>

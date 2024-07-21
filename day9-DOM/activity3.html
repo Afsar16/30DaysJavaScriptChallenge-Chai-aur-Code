@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Activity 3: Removing Elements
+Task 5: Select an HTML element and remove it from the DOM. 
+Task 6: Remove the last child of a specific HTML element. -->
+    <div>
+        hi
+        <p id="remove">this is para</p>
+        <h1>this is h1</h1>
+    </div>
+    
+    <!-- Task 6 -->
+     <ul class="items">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+     </ul>
+
+    <script>
+        const del1 = document.getElementById('remove');
+        del1.remove();
+
+        const ull = document.querySelector('.items');
+        ull.lastElementChild.remove();
+    </script>
+</body>
+</html>

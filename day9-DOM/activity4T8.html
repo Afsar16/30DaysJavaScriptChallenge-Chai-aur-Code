@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add and Remove Class</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p id="myParagraph">This paragraph will be highlighted.</p>
+    <button id="addClassButton">Add Class</button>
+    <button id="removeClassButton">Remove Class</button>
+    <script>
+        // Select the paragraph element by its ID
+        const paragraph = document.getElementById('myParagraph');
+        // Select the buttons by their IDs
+        const addClassButton = document.getElementById('addClassButton');
+        const removeClassButton = document.getElementById('removeClassButton');
+
+        // Add the highlight class to the paragraph when the add button is clicked
+        addClassButton.addEventListener('click', () => {
+            paragraph.classList.add('highlight');
+        });
+
+        // Remove the highlight class from the paragraph when the remove button is clicked
+        removeClassButton.addEventListener('click', () => {
+            paragraph.classList.remove('highlight');
+        });
+    </script>
+</body>
+</html> 
