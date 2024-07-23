@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    </style>
+</head>
+<body>
+<!-- Task 1: Add a click event listener to a button that changes the text content of a paragraph. -->
+    <p id="para">this is a para</p>
+    <button id="btn">click here</button>
+        
+    <script>
+        
+         const p = document.getElementById('para');
+         const btn = document.getElementById('btn');
+        //  const btn = document.getElementsByClassName('btn');
+         btn.addEventListener('click', function() {
+            p.textContent = "text changed";
+         })
+        
+    </script>
+</body>
+
+</html>
